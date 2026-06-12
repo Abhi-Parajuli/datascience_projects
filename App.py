@@ -302,11 +302,11 @@ with tab_predict:
 
         with t_col:
             st.markdown("<br><br>", unsafe_allow_html=True)
-            if score >= 7:
+            if score >= 8:
                 st.success(f"**Score: {score:.1f} / 10 — Healthy Range 🙂**\n\n"
                            "Your habits seem well-balanced. Keep maintaining your sleep, "
                            "activity, and study routines.")
-            elif score >= 4:
+            elif score >= 6:
                 st.warning(f"**Score: {score:.1f} / 10 — Moderate Range ⚠️**\n\n"
                            "Some habits may be worth adjusting. Try reducing screen time, "
                            "improving sleep, or adding short activity breaks.")
