@@ -431,7 +431,7 @@ with tab_dashboard:
             fig, ax = plt.subplots(figsize=(4, 3))
             cats = [o for o in (order or df[grp].unique()) if o in df[grp].unique()]
             data_list = [df[df[grp] == c]["Mental_Health_Score"].dropna() for c in cats]
-            bp = ax.boxplot(data_list, patch_artist=True, labels=cats,
+            bp = ax.boxplot(data_list, patch_artist=True, tick_labels=cats,
                             medianprops=dict(color="white", linewidth=2),
                             whiskerprops=dict(color=TEXT_COL),
                             capprops=dict(color=TEXT_COL),
